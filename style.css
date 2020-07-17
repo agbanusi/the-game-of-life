@@ -1,0 +1,85 @@
+body {
+  height:100vh;
+  width:100vw;
+  background-color: #81c784;
+}
+#root {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+#canvas {
+  border: 0.35rem solid #b0bec5;
+  background-color: #b0bec5;
+  border-radius: 0.35rem;
+}
+.cell {
+  stroke: #b0bec5;
+  stroke-width: 0.0625rem;
+}
+svg {
+  border: 0.35rem solid #ffca28;
+  border-radius: 0.35rem;
+}
+#pop {
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.welcome,
+.next {
+  height: 17.5rem;
+  width: 25rem;
+  display: grid;
+  place-items: center;
+  border: 0.5rem solid #ffca28;
+  background-color: white;
+  border-radius: 1rem;
+  animation: fadeIn ease 3s;
+}
+a {
+  text-decoration: none;
+}
+button {
+  margin: 1rem;
+  background-color: #aed581;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+button:focus {
+  outline: none;
+}
+.next {
+  width: 50vw;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.draw {
+  animation: fadeIn ease 3s;
+}
+.draw div {
+  display: flex;
+  justify-content: space-around;
+}
+.reset {
+  background-color: red;
+}
+.plays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plays button {
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  width: 25%;
+}
